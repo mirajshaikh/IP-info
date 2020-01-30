@@ -118,6 +118,25 @@
   
 }
 
+.card{
+  position: fixed;
+  padding: 10px 10px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000;
+  max-height: 200px;
+  max-width: 100px;
+  background-color: white;
+  text-align: center;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 1px #000;
+}
+.card:hover{
+  box-shadow: 0px 0px 7px 2px #000;
+}
+
 
 
     </style>
@@ -142,11 +161,12 @@
           <button id="getInfo2" class="infobtn2" type="button" disabled >Get Someone's else Info <span id="tooltiptext">Comming Soon</span> </button>
         </div>
       </div>
-    </div>
+      <a href="https://github.com/mirajshaikh/" target="_blank"><div class="card" > <img src="https://github.com/mirajshaikh/IP-info/blob/master/github-512.png?raw=true" width="30px"><br> <p> Github </p>  </div>
+    </div></a>
 
     <script>
       //api key https://api.ipgeolocation.io/ipgeo?apiKey=9ca8963aff474f50aa21560017ea3a7e
-     $(document).ready(function() {
+   /*  $(document).ready(function() {
         $.ajax({
     url: "https://api.ipgeolocation.io/ipgeo?apiKey=9ca8963aff474f50aa21560017ea3a7e",
     dataType: 'json',
@@ -163,7 +183,7 @@
 });
     }
         });
-      });
+      });*/
     </script>
   </body>
 </html>
